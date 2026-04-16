@@ -1,0 +1,8 @@
+.nav-item a > p{
+    font-family: "Source Sans 3";
+     font-size: 16px;
+}
+.nav-item a:hover,
+.nav-item a:hover > p{
+    color: #6c757d;
+}

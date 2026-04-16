@@ -1,0 +1,91 @@
+# This is a sample build configuration for PHP.
+# Check our guides at https://confluence.atlassian.com/x/e8YWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: php
+pipelines: 
+  branches:
+  # Staging Server Pipeline
+       stagingBranch:
+        - step:
+            name : Get Sync List & Deploy to Server
+            deployment: Staging
+            script:
+                - apt-get update
+                - apt-get -qq install git-ftp
+                - echo "Geting Deployment Sync List"
+                - git ftp push --auto-init -D -u $FTP_USERNAME -p $FTP_PASSWORD $FTP_URL
+                - echo "Deploying to Server"
+                - git ftp push --auto-init -u $FTP_USERNAME -p $FTP_PASSWORD $FTP_URL
+            after-script:
+                - if [[ BITBUCKET_EXIT_CODE -eq 0 ]]; 
+                    then export MESSAGE="Deployment Successful! New Update Deployed to RatemyPeer Staging Server.";
+                    else export MESSAGE="Deployment Failed! Unable to Deploy to RatemyPeer Staging Server.";
+                    fi;
+                - pipe: atlassian/slack-notify:2.0.0
+                  variables:
+                   WEBHOOK_URL: $CHANNEL_WEBHOOK_URL 
+                   MESSAGE: "${MESSAGE}"
+                   DEBUG: 'true' # Optional.
+
+ # Acceptance Server Pipeline
+       developmentBranch:
+        - step:
+            name : Get Sync List & Deploy to Server
+            deployment: Acceptance
+            script:
+                - apt-get update
+                - apt-get -qq install git-ftp
+                - echo "Geting Deployment Sync List"
+                - git ftp push --auto-init -D -u $FTP_USERNAME -p $FTP_PASSWORD $FTP_URL
+                - echo "Deploying to Server"
+                - git ftp push --auto-init -u $FTP_USERNAME -p $FTP_PASSWORD $FTP_URL
+            after-script:
+                - if [[ BITBUCKET_EXIT_CODE -eq 0 ]]; 
+                    then export MESSAGE="Deployment Successful! New Update Deployed to RatemyPeer Acceptance Server.";
+                    else export MESSAGE="Deployment Failed! Unable to Deploy to RatemyPeer Acceptance Server.";
+                    fi;
+                - pipe: atlassian/slack-notify:2.0.0
+                  variables:
+                   WEBHOOK_URL: $CHANNEL_WEBHOOK_URL 
+                   MESSAGE: "${MESSAGE}"
+                   DEBUG: 'true' # Optional.
+                   
+#Production Server Pipeline
+       master:
+       - step:
+           name : Get Sync List
+           deployment: Production-Verify
+           script:
+               - apt-get update
+               - apt-get -qq install git-ftp
+               - echo "Geting Deploy Sycn List"
+               - git ftp push --auto-init -D -u $FTP_USERNAME -p $FTP_PASSWORD $FTP_URL
+       - step:
+          name : "Manual Deployment"
+          trigger : manual
+          deployment: Production-Deploy
+          script:
+             - apt-get update
+             - apt-get -qq install git-ftp
+             - echo "Deploying to Server"
+             - git ftp push --auto-init -u $FTP_USERNAME -p $FTP_PASSWORD $FTP_URL
+
+       - step:
+          name : Slack Notify
+          script :
+          - pipe: atlassian/slack-notify:2.0.0
+            variables:
+              WEBHOOK_URL:  $MUSADDIQ_WEBHOOK_URL 
+              MESSAGE: 'New Update Deployed to RatemyPeer Production Server'
+              DEBUG: 'true' # Optional.
+
+
+
+
+
+
+
+
+

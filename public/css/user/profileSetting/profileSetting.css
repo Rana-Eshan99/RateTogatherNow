@@ -1,0 +1,222 @@
+/* CSS for Heading */
+.cardHeading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #161617;
+}
+
+/* CSS for Edit Profile Button */
+#editProfile {
+    border-radius: 4px;
+    background-color: #0678E9 !important;
+    width: 106px;
+    height: 37px;
+    font-size: 14px;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    #editProfile {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 480px) {
+    #editProfile:hover {
+        background: #6941C6 !important;
+    }
+}
+
+@media (min-width: 480px) {
+    #btnEditMyPeerRating:hover {
+        background: #6941C6 !important;
+    }
+}
+
+@media (min-width: 480px) {
+    #btnEditMyOrganizationRating:hover {
+        background: #6941C6 !important;
+    }
+}
+/* CSS for label heading */
+.labelHeading {
+    font-size: 14px;
+    color: #344054;
+    font-weight: 500 !important
+}
+
+/* CSS for Profile Avatar Image */
+#avatarImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 200px;
+    object-fit: cover;
+    border: 2px solid #CCE6FF;
+}
+
+/* CSS for camera Icon Div */
+.cameraIconOverlay {
+    width: 32px;
+    height: 32px;
+    background-color: #F1F1F1;
+    border-radius: 99px;
+    border: 2px solid #FFFFFF;
+    bottom: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* CSS for Camera inside */
+.insideCameraIcon {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+/* CSS for Save button on disable */
+.saveBtnDisable {
+    background-color: #EEEEEE;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+}
+
+/* CSS for Save button text on disable  */
+.saveBtnDisable span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7C7B7B;
+}
+
+/* CSS for save button on enable */
+.saveBtnEnable {
+    background-color: #0678E9;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+}
+
+/* CSS for Save button text on enable */
+.saveBtnEnable span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* CSS to change background color on hover effect on the saveChangesBtn */
+#saveChangesBtn:hover {
+    background: #6941C6;
+}
+
+/* Set the custom size of star */
+.starLabelStarSize {
+    font-size: 22px;
+}
+
+
+/* CSS ofr Organization/Peer Info Div */
+.organization-info,
+.peer-info {
+    flex: 1;
+    min-width: 0;
+    /* Ensures ellipsis works */
+}
+
+/* CSS for Verified Badge */
+.verified-badge {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+    flex-shrink: 0;
+    /* Prevents the badge from shrinking */
+}
+
+
+/* CSS for the Organization address, Peer address to restrict them to one line and show the remaining ellipses. */
+.organizationAddress,
+.peerAddress {
+    font-size: 14px;
+    font-weight: 400;
+    color: #58585D;
+    word-wrap: break-word;
+    white-space: normal;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .organizationAddress {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+/* CSS for the Organization Name & Peer Name to restrict them to one line and show the remaining ellipses. */
+.organizationName,
+.peerName {
+    font-size: 20px;
+    font-weight: 600;
+    color: #58585D;
+}
+
+
+@media (min-width: 768px) {
+    .organizationName {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        /* Limit text to 1 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Media Query */
+@media (min-width: 1200px) {
+
+    /* For screens larger than 1200px (Laptop L 1440px) */
+    .col-lg-auto-adapt {
+        flex: 0 0 50%;
+        /* Takes 6 columns on large screens */
+        max-width: 100%;
+        position: absolute;
+        right: 0px;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 800px) {
+    .col-custom-12 {
+        flex: 0 0 100%;
+        /* Takes 12 columns */
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 1199.98px) and (min-width: 1024px) {
+
+    /* For screens between 1024px and 1199px (Laptop 1024px) */
+    .col-md-auto-adapt {
+        flex: 0 0 100%;
+        /* Takes 6 columns on medium screens */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1023.98px) {
+
+    /* For screens smaller than 1024px (Nest Hub) */
+    .col-sm-auto-adapt {
+        flex: 0 0 100%;
+        /* Takes 12 columns on small screens */
+        max-width: 100%;
+    }
+}
+
+.ui-autocomplete {
+    max-height: 150px; /* Limit the height of the suggestions */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding-right: 10px; /* Add space for scrollbar */
+}

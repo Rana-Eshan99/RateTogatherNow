@@ -1,0 +1,190 @@
+/* CSS for Card Heading */
+.cardHeading {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #161617;
+}
+
+/* CSS for Card Heading->Text(Paragraph) */
+.headingParagraph {
+    font-size: 16px;
+    font-weight: 400 !important;
+    color: #00000080;
+}
+
+/* CSS for Peer Counts */
+#peerCount {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #000000;
+}
+
+/* CSS for Add Peer button */
+#btnAddPeer {
+    height: auto;
+    border-radius: 4px;
+    background-color: #0678E9;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* CSS for Search Icon Inside the Search Filter */
+.searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+}
+
+/* CSS for Initials inside div  */
+.initialsInsideDiv {
+    height: 64px;
+    width: 64px;
+    border-radius: 9999px;
+    gap: 10px;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 4px 0px #00000040;
+}
+
+/* CSS for the initials (Inside the initials div */
+.initialsInsideDiv label {
+    font-size: 18px;
+    font-weight: 600 !important;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+/* CSS for Saved Peer -> Peer Name(First & Last Name) in the List Card */
+.peerFirstLastName {
+    font-size: 16px;
+    font-weight: 500 !important;
+    color: #161617;
+    margin-right: 15px;
+}
+@media (min-width: 768px) {
+    .peerFirstLastName {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+
+/* CSS for Saved Peer-> Peer Designation Name at Organization Name in the List Card */
+.peerDesignation_OrgName {
+    font-size: 16px;
+    font-weight: 400 !important;
+    color: #58585D;
+}
+@media (min-width: 768px) {
+    .peerDesignation_OrgName {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+/* CSS for Save and Un-Save peer */
+.save,
+.unSave {
+    height: 24px;
+    width: 24px;
+}
+
+/* CSS for work again label */
+.workAgainLabel {
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: #58585D;
+    margin-bottom: 0px;
+}
+
+/* CSS for work again inside div */
+.workAgainInsideDiv {
+    border-radius: 4px;
+    height: 16px;
+    width: 16px;
+    margin-right: 3px
+}
+
+/* CSS for Again Rating / Value */
+.workAgainValue {
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: #58585D;
+    margin-bottom: 0px;
+}
+
+/* CSS for Over All Rating Label */
+.overAllRating {
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: #58585D;
+    margin-bottom: 0px;
+}
+
+/* CSS for Over All Rating-Value */
+.overAllRatingValue {
+    font-size: 24px;
+    font-weight: 500 !important;
+    color: #000000;
+    padding-right: 5px;
+}
+
+
+/* Media Query */
+@media (min-width: 1200px) {
+    /* For screens larger than 1200px (Laptop L 1440px) */
+    .col-lg-auto-adapt {
+        flex: 0 0 50%;
+        /* Takes 6 columns on large screens */
+        max-width: 100%;
+        position: absolute;
+        right: 0px;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 800px) {
+    .col-custom-12 {
+        flex: 0 0 100%;
+        /* Takes 12 columns */
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 1199.98px) and (min-width: 1024px) {
+    /* For screens between 1024px and 1199px (Laptop 1024px) */
+    .col-md-auto-adapt {
+        flex: 0 0 100%;
+        /* Takes 6 columns on medium screens */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1023.98px) {
+
+    /* For screens smaller than 1024px (Nest Hub) */
+    .col-sm-auto-adapt {
+        flex: 0 0 100%;
+        /* Takes 12 columns on small screens */
+        max-width: 100%;
+    }
+}
+
+
+
+@media (min-width: 480px) {
+    #btnAddPeer:hover {
+        background: #6941C6 !important;
+    }
+}

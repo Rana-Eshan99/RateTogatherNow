@@ -1,0 +1,63 @@
+@import url('poppinsFont.css');
+
+/* CSS for description below the title */
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #00000080;
+}
+
+/* CSS for the title */
+.title {
+    color: #161617;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* CSS for Submit button */
+#btnReportRating {
+    height: 56px;
+    width: 122px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+#btnReportRating:hover {
+    background: #6941C6 !important;
+}
+
+/* CSS for experience input fields */
+.customBorderRadiusExperience {
+    height: 200px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    resize: none;
+    box-shadow: none;
+}
+
+/* CSS for experience input fields to set custom border radius on focus*/
+.customBorderRadiusExperience:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* CSS to set the height of experience */
+textarea.form-control {
+    height: 154px;
+}
+
+.customBorderRadiusModel {
+    border-radius: 8px;
+}
+
+.p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #00000066;
+}
+.btnCus:hover {
+    background: #6941C6 !important;
+}

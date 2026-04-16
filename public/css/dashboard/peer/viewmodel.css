@@ -1,0 +1,93 @@
+.customChanges{
+    padding: 24px 32px 24px 32px !important;
+}
+
+.mainTile{
+    font-weight: 600;
+    font-size: 24px;
+}
+.feildTitle{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card-body {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#active-organizations-table {
+    width: 100%;
+    table-layout: auto; /* Ensure the table adjusts to the card body */
+}
+
+@media (max-width: 768px) {
+    .customChanges{
+        padding: 24px 16px 24px 16px !important;
+    }
+    .mainTile{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .feildTitle{
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .marignCustom{
+       margin: 0px !important;
+    }
+
+}
+
+.fontManages
+{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: 'Source Sans 3', sans-serif !important;
+}
+
+#org-name{
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    font-family: 'Source Sans 3', sans-serif !important;
+    padding-top: 0px !important;
+    padding-left: 10px !important;
+    padding-bottom: 0px !important;
+    height: 36px !important;
+}
+
+#confirmApproved
+{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: 'Source Sans 3', sans-serif !important;
+    padding: 0px !important;
+}
+
+.marignCustom{
+    padding: 0px !important;
+}
+
+.rejectManage{
+    font-size: 16px !important;
+    font-weight:  400 !important;
+    font-family: 'Source Sans 3', sans-serif !important;
+    padding: 0px !important;
+    color: black !important;
+}
+
+@media (min-width: 766px) {
+    .changeCustomPadding {
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 765px) {
+    .changeCustomPadding {
+        padding-left: 15px !important;
+    }
+}

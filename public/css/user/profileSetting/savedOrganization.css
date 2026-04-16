@@ -1,0 +1,56 @@
+/* CSS for Saved Organization Name in the List Card */
+.organizationNameSaved {
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #161617;
+    word-wrap: break-word;
+    white-space: normal;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .organizationNameSaved  {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+
+/* CSS for Saved Organization Address in the List Card */
+.organizationAddressSaved {
+    font-size: 16px;
+    font-weight: 400;
+    color: #58585D;
+    word-wrap: break-word;
+    white-space: normal;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .organizationAddressSaved  {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+/* CSS for Organization Count */
+#organizationCount{
+    font-size: 20px;
+    font-weight:600 !important;
+    color: #161617;
+}
+
+/* CSS for Organization Logo */
+.organizationLogo {
+    height: 64px;
+    width: 64px;
+    border-radius: 888px;
+    border: 2px solid #CCE6FF;
+}

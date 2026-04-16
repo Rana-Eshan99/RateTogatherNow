@@ -1,0 +1,120 @@
+.content-header h1{
+    font-family: "Source Sans 3";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56.96px;
+    text-align: left;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+}
+
+
+         /* modal styling  */
+.closeBtn{
+    background: none;
+    border: none;
+}
+.modal-body h3{
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.14px;
+    text-align: left;
+    color: #161617;
+}
+.navbar-text{
+     font-family: "Source Sans 3";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.78px;
+    color: black;
+}
+.brand-text{
+    font-family: "Source Sans 3";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.78px;
+    text-align: center;
+    color: black;
+}
+
+/* organization and peer rating modal  */
+
+.approveBtn{
+    width: 81px;
+    height: 32px;
+    padding: 4px 12px 4px 12px;
+    border-radius: 5px ;
+    background-color:#34A853;
+    color: #FFFFFF;
+    font-family: "Source Sans 3";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.78px;
+    text-align: center;
+}
+.rejectBtn{
+    font-family: "Source Sans 3";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.78px;
+    text-align: center;
+    color: #DC143C;
+    margin-left: 5px;
+    width: 81px;
+    height: 32px;
+    padding: 4px 12px 4px 12px;
+    border-radius: 5px ;
+    background-color:#F5F5F5;
+}
+.user-rating-title{
+font-family: "Source Sans 3";
+font-size: 16px;
+font-weight: 600;
+line-height: 22.78px;
+text-align: left;
+margin: 0px;
+}
+.longText{
+ font-family: "Source Sans 3" !important;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.48px;
+    text-align: left;
+    color: #58585D;
+}
+.rating{
+    font-family: "Source Sans 3";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28.48px;
+    text-align: left;
+    color:#2383E2;
+    padding-left: 5px;
+}
+.box{
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    background: #11951E;
+    margin-right: 10px;
+
+}
+
+.red{
+    background: #F94747;
+}
+
+.green{
+    background: #11951E;
+}
+
+.boxSpan{
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #58585D;
+}
+/* 991 767 */

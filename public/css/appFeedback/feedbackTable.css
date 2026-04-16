@@ -1,0 +1,25 @@
+
+.feeling{
+    font-family: "Source Sans 3";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.78px;
+    color: #161617;
+}
+
+.feelingVal{
+    font-family: "Source Sans 3";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.78px;
+    color: #2383E2;
+    text-transform: capitalize;
+}
+.feedbackVal{
+    font-family: "Source Sans 3";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.48px;
+    text-align: left;
+    color: #58585D;
+}

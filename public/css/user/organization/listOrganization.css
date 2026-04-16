@@ -1,0 +1,165 @@
+/* CSS for Organization Address and ellipses them */
+.organizationAddress {
+    font-size: 16px;
+    font-weight: 400;
+    color: #58585D;
+}
+
+@media (min-width: 768px) {
+    .organizationAddress {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+
+/* CSS for Organization Name to wrap to the next line */
+.organizationName {
+    font-size: 16px;
+    font-weight: 500;
+    color: #161617;
+    margin-right: 15px;
+    word-wrap: break-word;
+    white-space: normal;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .organizationName {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+
+/* CSS for Card Heading i.e Organizations or Count */
+.cardHeading,
+#organizationCount {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #161617;
+}
+
+/* CSS for Paragraph below the Organizations Heading */
+.cardHeadingText {
+    font-size: 16px;
+    font-weight: 400;
+    color: #00000080;
+}
+
+/* CSS for button Add Organization */
+#btnAddOrganization {
+    height: auto;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600 !important;
+    color: #FFFFFF;
+}
+
+@media (min-width: 480px) {
+    #btnAddOrganization:hover {
+        background: #6941C6;
+    }
+}
+
+/* CSS for the Search Filter */
+#searchOrganization {
+    padding-left: 40px;
+}
+
+/* CSS of Search Icon inside the Search Filter */
+#searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+}
+
+/* CSS for Organization Logo */
+.organizationLogo {
+    height: 64px;
+    width: 64px;
+    border-radius: 888px;
+    border: 2px solid #CCE6FF;
+}
+
+/* CSS for Label Over All Rating Employee Happiness */
+.labelOverAllRating,
+.labelOverAllEmpHappiness {
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: #58585D
+}
+
+/* CSS for Label Over All Rating Value and Employee Happiness Rating Value */
+.labelOverAllRatingValue,
+.labelOverAllEmpHappinessValue {
+    font-size: 24px;
+    font-weight: 500 !important;
+    color: #000000;
+    padding-right: 5px;
+}
+
+
+
+/* Media Query */
+
+@media (min-width: 1200px) {
+
+    /* For screens larger than 1200px (Laptop L 1440px) */
+    .col-lg-auto-adapt {
+        flex: 0 0 50%;
+        /* Takes 6 columns on large screens */
+        max-width: 100%;
+        position: absolute;
+        right: 0px;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 800px) {
+    .col-custom-12 {
+        flex: 0 0 100%;
+        /* Takes 12 columns */
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 1199.98px) and (min-width: 1024px) {
+
+    /* For screens between 1024px and 1199px (Laptop 1024px) */
+    .col-md-auto-adapt {
+        flex: 0 0 100%;
+        /* Takes 6 columns on medium screens */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1023.98px) {
+
+    /* For screens smaller than 1024px (Nest Hub) */
+    .col-sm-auto-adapt {
+        flex: 0 0 100%;
+        /* Takes 12 columns on small screens */
+        max-width: 100%;
+    }
+}
+
+/* CSS to Set the Star label size for Nest Hub screens */
+@media (max-width: 1280px) and (min-width: 800px) {
+
+    /* For screens Nest Hub Max */
+    .star-rating label {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,346 @@
+@import url('poppinsFont.css');
+
+.user-rating-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(22, 22, 23, 1);
+    margin-top: 4px;
+}
+
+.user-star-rating {
+    font-size: 22px;
+    flex-wrap: nowrap;
+}
+
+.user-star {
+    width: 30px;
+    height: 30px;
+}
+
+.user-rates {
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(22, 22, 23, 1);
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(88, 88, 93, 1);
+}
+
+.user-rating-logo {
+    width: 64px;
+    height: 64px;
+}
+
+
+.title-rating {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0px !important;
+}
+
+.title-overall {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0px !important;
+}
+
+.rates {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000
+}
+
+.rating-title {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.brand-name {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.address-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #58585D;
+}
+
+.total-rating {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #000000;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+    margin-top: 4px;
+    margin-bottom: none !important;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.organization-name h3 {
+    margin: 0;
+}
+
+/* CSS for Organization Address & Ellipses the text to 1 line */
+.organization-name p {
+    margin: 0;
+    color: #666;
+}
+
+.star-rating {
+
+    font-size: 2.1rem;
+}
+
+.star {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star.filled {
+    color: #f5c518;
+}
+
+.star-filled {
+    color: #f5c518;
+    font-size: 28px
+}
+
+/* Disable pointer for non-gold stars when hovered */
+.star:not(.filled):hover {
+    cursor: not-allowed;
+}
+
+
+.btn-outline-primary {
+    color: #007bff;
+    background-color: transparent;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0px !important;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.chart-container {
+    position: relative;
+    height: 172px;
+}
+
+.chart-container-horizontal {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.doughnut-center-text {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24.4px;
+    font-weight: 700;
+    color: #414D55;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.doughnut-center-text span {
+    display: block;
+    font-size: 8px;
+    font-weight: 500;
+    color: #00000066;
+}
+
+
+.legend-container span {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.legend-container span div {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    border-radius: 2px;
+}
+
+.legend-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.p {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #58585D;
+}
+
+.bar-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #858181;
+    margin-left: 3px;
+}
+
+.legend-color {
+    border-radius: 3px;
+}
+
+/* CSS for styling the text of of Button View All Peers, Rate & Compare buttons */
+.btnStyle {
+    font-size: 14px;
+    font-weight: 600 !important;
+}
+.btnStyles {
+    font-size: 14px;
+    font-weight: 600 !important;
+}
+
+@media (min-width: 480px) {
+    .btnStyle:hover {
+        background: #6941C6 !important;
+    }
+}
+@media (min-width: 480px) {
+    .btnStyles:hover {
+        background: #6941C6 !important;
+    }
+}
+/* CSS for Initials inside div  */
+.initialsInsideDivs {
+    width: 64px; /* Adjust size as needed */
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 0px #00000040;
+}
+
+/* CSS for the initials (Inside the initials div */
+.initialsInsideDivs label {
+    font-size: 18px;
+    font-weight: 600 !important;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+/* CSS for Helpful thumbs-up & thumbs-down */
+.helpful img{
+    height:24px;
+    width:24px;
+}
+
+@media (max-width: 768px) {
+    .legend-item span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .chart-container {
+        width: 90%;
+        height: 90%;
+    }
+    .my {
+        position: absolute;
+        top: 33%    !important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24.4px;
+        font-weight: 700;
+        color: #414D55;
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 540px) {
+    .mycustmChart {
+        height: 420px   !important;
+    }
+    .myChanges {
+        display: flex   !important;
+        flex-direction: column   !important;
+    }
+    .bar-text{
+        display: -webkit-box    !important;
+    -webkit-line-clamp: 1   !important;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical    !important;
+    overflow: hidden    !important;
+    text-overflow: ellipsis   !important;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .bar-text{
+        display: -webkit-box    !important;
+    -webkit-line-clamp: 1   !important;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical    !important;
+    overflow: hidden    !important;
+    text-overflow: ellipsis   !important;
+    }
+}
+.manage-spacings {
+    margin-top: 14px !important;
+}

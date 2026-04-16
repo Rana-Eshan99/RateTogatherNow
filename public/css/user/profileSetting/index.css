@@ -1,0 +1,19 @@
+ /* Style for the active tab */
+ .nav-link.active {
+     color: #0678E9;
+     /* Blue text color */
+     border-bottom: 2px solid #0678E9;
+     /* Blue bottom border */
+     font-weight: 500;
+ }
+
+ /* Remove default bottom border on tabs */
+ .nav-link {
+     /* border-bottom: none; */
+     color: #00000080;
+ }
+
+ /* Hover state for non-active tabs */
+ .nav-link:hover {
+     color: #0678E9;
+ }

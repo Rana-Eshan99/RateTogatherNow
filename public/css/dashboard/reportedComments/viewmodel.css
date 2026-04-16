@@ -1,0 +1,416 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.content-user-wrapper {
+    max-height: calc(100vh - 73px);
+    overflow-y: auto;
+}
+
+.user-rating-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #161617;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.user-star-rating {
+    font-size: 20px;
+    flex-wrap: nowrap;
+}
+
+.user-star {
+    width: 30px;
+    height: 30px;
+}
+
+.user-rates {
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(22, 22, 23, 1);
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(88, 88, 93, 1);
+}
+
+.user-rating-logo {
+    width: 64px;
+    height: 64px;
+}
+
+
+.title-rating {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0px !important;
+}
+
+.title-overall {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0px !important;
+}
+
+.rates {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000
+}
+
+.rating-title {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.content-wrapper {
+    max-height: calc(100vh - 100px);
+    /* Adjust the height according to your needs */
+    overflow-y: auto;
+}
+
+.brand-name {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.address-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #58585D;
+}
+
+.total-rating {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #000000;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+    margin-top: 4px;
+    margin-bottom: none !important;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.organization-name h3 {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* CSS for Organization Address & Ellipses the text to 1 line */
+.organization-name p {
+    margin: 0;
+    color: #666;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.star-rating {
+
+    font-size: 2.1rem;
+}
+
+.star {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star.filled {
+    color: #f5c518;
+}
+
+.star-filled {
+    color: #f5c518;
+    font-size: 28px
+}
+
+/* Disable pointer for non-gold stars when hovered */
+.star:not(.filled):hover {
+    cursor: not-allowed;
+}
+
+
+.btn-outline-primary {
+    color: #007bff;
+    background-color: transparent;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0px !important;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.chart-container {
+    position: relative;
+    height: 172px;
+}
+
+.chart-container-horizontal {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.doughnut-center-text {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24.4px;
+    font-weight: 700;
+    color: #414D55;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.doughnut-center-text span {
+    display: block;
+    font-size: 8px;
+    font-weight: 500;
+    color: #00000066;
+}
+
+
+.legend-container span {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.legend-container span div {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    border-radius: 2px;
+}
+
+.legend-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.p {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #00000066;
+}
+
+.bar-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #858181;
+    margin-left: 3px;
+}
+
+.legend-color {
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .legend-item span {
+        font-size: 12px;
+    }
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-rating .star {
+    font-size: 36px;
+    color: #F9C154; /* Gold color for filled stars */
+}
+
+.star-rating .star.filled {
+    color: #F9C154; /* Filled star color */
+}
+
+.star-rating .star:not(.filled) {
+    color: #ddd; /* Grey for unfilled stars */
+}
+
+.experienceCustom{
+    font-size: 20px;
+    font-weight: 400;
+    color: #58585D;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.mianTile{
+    font-size: 20px;
+    font-weight: 700;
+    color: #161617;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.points{
+    font-size: 20px;
+    font-weight: 700;
+    color: #2383E2;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 5px;
+}
+.secoundTile{
+    font-size: 20px;
+    font-weight: 700;
+    color: #161617;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.secoundDiscription{
+    font-size: 20px;
+    font-weight: 400;
+    color: #58585D;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.secoundName{
+    font-size: 20px;
+    font-weight: 700;
+    color: #2383E2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.delete-btn {
+    background-color: #FFE4E4; /* Light pink background */
+    color: #DC143C; /* Crimson red text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 4px 8px; /* Padding for a balanced button size */
+    display: inline-flex; /* Flex to align icon and text */
+    align-items: center; /* Vertically center the icon and text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px !important; /* Font size for the text */
+    font-weight: 600; /* Bold text for emphasis */
+    width: 89px; /* Button width */
+    height: 32px; /* Button height */
+    font-family: 'Source Sans 3', sans-serif    !important; /* Font family for the text */
+}
+
+.keep-btn {
+    background-color: #34A853;
+    color: #fff;
+    width: 67px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+
+.keep-peers-btn {
+    background-color: #34A853;
+    color: #fff;
+    width: 67px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.del{
+    margin-top: 2px !important;
+}
+.kep{
+    margin-top: 2px !important;
+}
+.delete-btn img {
+    width: 11px; /* Icon width */
+    height: 12px; /* Icon height */
+    margin-right: 5px; /* Space between the icon and text */
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+.delete-btn:hover {
+    background-color: #ffd1d1; /* Slightly darker pink on hover */
+}
+.delete-peer-btn {
+    background-color: #FFE4E4; /* Light pink background */
+    color: #DC143C; /* Crimson red text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 4px 8px; /* Padding for a balanced button size */
+    display: inline-flex; /* Flex to align icon and text */
+    align-items: center; /* Vertically center the icon and text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px !important; /* Font size for the text */
+    font-weight: 600; /* Bold text for emphasis */
+    width: 89px; /* Button width */
+    height: 32px; /* Button height */
+    font-family: 'Source Sans 3', sans-serif !important; /* Font family for the text */
+}
+
+.delete-peer-btn img {
+    width: 11px; /* Icon width */
+    height: 12px; /* Icon height */
+    margin-right: 5px; /* Space between the icon and text */
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+.delete-peer-btn:hover {
+    background-color: #ffd1d1; /* Slightly darker pink on hover */
+}

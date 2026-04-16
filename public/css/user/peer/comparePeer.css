@@ -1,0 +1,134 @@
+/* CSS for Peer Info Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 250px    !important;
+    height: 100%;
+    padding: 12px;
+    gap: 10px;
+    border-radius: 8px;
+    opacity: 1;
+    /* Adjust opacity as needed */
+    background-color: #FFFDFD;
+    border: 2px solid #CCE6FF;
+    box-shadow: 4px 4px 10px 4px #E4F2FF;
+    cursor: pointer;
+}
+
+/* CSS for Peer FUll Name and ellipses them to 2 lines */
+.peerFullName {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #161617;
+    margin-bottom: 10px;
+}
+
+/* CSS for Over Al Rating Label */
+.overall-rating {
+    font-size: 16px;
+    font-weight: 500 !important;
+    color: #58585D;
+}
+
+/* CSS for Over Al Rating Value */
+.rating-value {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #0678E9;
+}
+
+/* CSS for Compare Peer Info Container */
+.comparePeerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 250px    !important;
+    height: 100%;
+    padding: 12px;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #F7F6F6;
+    border: 2px solid #CCE6FF;
+    box-shadow: 4px 4px 10px 4px #E4F2FF;
+    cursor: pointer;
+    opacity: 1;
+    /* Adjust opacity as needed */
+}
+
+#comparePeerName {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #161617;
+    margin-bottom: 10px;
+}
+
+/* CSS for Label Heading in the Rating Section*/
+.lblRating{
+    font-size: 16px;
+    font-weight: 500 !important;
+    color: #161617;
+}
+
+/* CSS for Card Heading i.e Compare Peer */
+.cardHeading{
+    font-size: 20px;
+    font-weight:600 !important;
+    color:#161617
+}
+
+/* CSS for Reset Button Color */
+.resetBtnColor {
+    background-color: #EEEEEE;
+    color: #7C7B7B;
+}
+
+/* CSS for Reset Button */
+#btnReset{
+    height:56px;
+    width:109px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* CSS for Work Again Box */
+.workAgainBox{
+    border-radius:3px;
+    height: 26px;
+    width: 26px;
+    margin-right:3px;
+    margin-top: -7px;
+}
+
+
+/* CSS for Work Again Rating Value */
+.workAgainYesRating{
+    color: #58585D;
+    font-size:16px;
+    font-weight:500 !important;
+}
+@media (max-width: 1024px) {
+
+    .comparePeerContainer {
+        width: 220px    !important;
+    }
+
+    .container{
+        width: 220px    !important;
+    }
+
+}
+@media (min-width: 1281px) {
+
+    .comparePeerContainer {
+        margin-left: 110px  !important;
+    }
+    .myChange {
+        margin-left: 110px  !important;
+    }
+}

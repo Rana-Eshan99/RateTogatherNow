@@ -1,0 +1,100 @@
+.truncate {
+    max-width: 200px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.delete-btn:hover {
+    background-color: #ffd1d1; /* Slightly darker pink on hover */
+}
+.delete-peer-btn {
+    background-color: #FFE4E4; /* Light pink background */
+    color: #DC143C; /* Crimson red text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 4px 8px; /* Padding for a balanced button size */
+    display: inline-flex; /* Flex to align icon and text */
+    align-items: center; /* Vertically center the icon and text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px !important; /* Font size for the text */
+    font-weight: 600; /* Bold text for emphasis */
+    width: 89px; /* Button width */
+    height: 32px; /* Button height */
+    font-family: 'Source Sans 3', sans-serif !important; /* Font family for the text */
+}
+
+.delete-peer-btn img {
+    width: 11px; /* Icon width */
+    height: 12px; /* Icon height */
+    margin-right: 5px; /* Space between the icon and text */
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+.delete-peer-btn:hover {
+    background-color: #ffd1d1; /* Slightly darker pink on hover */
+}
+
+.customChange{
+    font-family: 'Source Sans 3', sans-serif !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0598EC;
+}
+.customChanges{
+    color: #0598EC;
+    text-decoration: underline; /* Adds underline */
+}
+
+.changeStyle{
+    font-family: 'Source Sans 3', sans-serif !important;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212529 !important;
+}
+.titleStyle{
+    font-family: 'Source Sans 3', sans-serif !important;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #161617 !important;
+}
+.inputFieldHeights{
+    min-height: 52px !important;
+}
+.orgTitle{
+    font-family: 'Source Sans 3', sans-serif !important;
+    font-weight: 600;
+    font-size: 40px;
+    color: #000000 !important;
+}
+.orgName{
+    font-family: 'Source Sans 3', sans-serif !important;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000 !important;
+    margin-bottom: 16px;
+}
+.marifnChange
+{
+    margin-top: -10px !important;
+}
+
+.orgPeerDelete{
+    font-family: 'Source Sans 3', sans-serif !important;
+    color: #000000 !important;
+}
+.orgPeerDeletes{
+    font-family: 'Source Sans 3', sans-serif !important;
+    color: #000000 !important;
+}
+.titleStylePeer{
+    font-family: 'Source Sans 3', sans-serif !important;
+    font-weight: 700;
+    font-size: 24px;
+    color: #161617 !important;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+}

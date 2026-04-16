@@ -1,0 +1,128 @@
+/* CSS for Organization Avatar */
+#organizationAvatar {
+    object-fit: cover;
+    border-radius: 999px;
+    width: 72px;
+    height: 72px;
+    gap: 8px;
+}
+
+/* CSS for Organization Logo Div and Show its border color */
+#organizationLogoDiv {
+    background: #F2F4F7;
+    border: 2px solid #CCE6FF;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS for Organization Name and Ellipses them to One line */
+.organizationName {
+    font-size: 28px;
+    font-weight: 600;
+    color: #161617;
+    margin-right: 15px;
+    word-wrap: break-word;
+    white-space: normal;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .organizationName {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        /* Limit text to 1 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* CSS for Organization Address and Ellipses them to One line */
+.organizationAddress {
+    font-size: 16px;
+    font-weight: 400 !important;
+    color: #58585D;
+}
+@media (min-width: 768px) {
+    .organizationAddress {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+/* CSS for the Label Over All Score */
+.labelOverAllScore {
+    font-size: 18px;
+    font-weight: 500 !important;
+    color: #000000;
+    margin-right: 14px;
+}
+
+/* CSS for the Label Over All Score-Value */
+.labelOverAllScoreValue {
+    font-size: 32px;
+    font-weight: 500 !important;
+    color: #000000;
+    margin-right: 8px;
+}
+
+/* CSS for Save and Un-Save Organization Icon */
+#savedOrganizationForm img {
+    height: 24px;
+    width: 24px;
+}
+
+/* CSS for Organization Name in the Rating Card(2nd Card) */
+.organizationNameChild {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #161617;
+}
+
+/* CSS for Summary Line About Rating in the 2nd Card */
+.ratingSummary {
+    font-size: 16px;
+    font-weight: 400 !important;
+    color: #00000080;
+}
+
+/* CSS for Label Heading in the form-rating */
+.labelHeading {
+    font-size: 16px;
+    font-weight: 500 !important;
+    color: #161617;
+}
+
+/* CSS for Experience fields */
+#experience {
+    height: 80px;
+    resize: none;
+    text-align: justify;
+    vertical-align: top;
+    display: flex;
+    align-items: flex-start;
+    /* Align text to the top */
+    text-align: justify;
+    /* Justify text */
+    padding: 10px;
+    /* Add padding for better readability */
+    box-sizing: border-box;
+    /* Include padding in height calculation */
+}
+
+/* CSS for Rate Organization Button */
+#btnRateOrganization {
+    font-size: 14px;
+    font-weight: 600 !important;
+    color: #FFFFFF;
+}
+
+/* CSS to change background color on hover effect on the Close button in submission modal */
+#btnClose:hover {
+    background: #6941C6;
+}

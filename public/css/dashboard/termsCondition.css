@@ -1,0 +1,187 @@
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+    padding: 15px 15px 0px 0px !important;
+}
+div.dataTables_wrapper div.dataTables_filter label span{
+    padding-right: 10px;
+
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    text-align: center;
+
+}
+
+div.dataTables_wrapper div.dataTables_filter label input{
+width: 250px;
+gap: 0px;
+border-radius: 8px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background-color: #FFFFFF;
+border: 1px solid #F4F4F4;
+
+}
+.term-title {
+    height: 33px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32.78px;
+    color: #141414;
+    margin: 0;
+}
+
+.title,
+.description,
+.note-statusbar {
+    border: 1px solid #445260 !important;
+}
+
+.note-editable {
+    border: 1px solid #445260 !important;
+}
+
+.input-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.86px;
+    color: #141414;
+    margin-bottom: 10px;
+}
+
+.condition-view-heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32.78px;
+    color: #141414;
+}
+
+.condition-view-content {
+    padding-top: 4% !important;
+}
+
+.condition-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.86px;
+    color: #6F6F6F;
+}
+
+.view-button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+    height: 48px;
+    color: #141414;
+    border: 1px solid #445260;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.heading-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+}
+
+.terms-condition-content {
+    min-height: 550px !important;
+    margin-top: 4%;
+}
+
+.header-row {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8%;
+    padding-top: 0;
+}
+
+.note-editor .note-toolbar {
+    margin: 0;
+    padding: 5px 0 18px 5px !important;
+    background: none !important;
+    border-bottom: 1px solid #F4F4F4 !important;
+}
+
+.note-btn-group .note-btn {
+    border-color: #00000032 !important;
+    font-size: 13px !important;
+    padding: 0 6px !important;
+    background: none;
+    border: none;
+    color: #445260 !important;
+}
+
+.note-editor .note-toolbar>.note-btn-group {
+    margin-left: 0;
+    margin-right: 0px !important;
+    margin-top: 0px !important;
+    height: 15px !important;
+}
+
+.note-editor {
+    position: relative;
+    border: none !important;
+}
+
+.note-editor.note-frame .note-statusbar {
+    display: none !important;
+}
+
+#createTermCondition #title {
+    border-radius: 8px !important;
+    height: 48px !important;
+}
+.save-button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+    height: 48px;
+    color: white;
+    border-radius: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.edit-button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+    height: 48px;
+    color: #603dfa;
+    border: 1px solid #603dfa;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .dataTables_info{
+        display: inline-block;
+    }
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+    padding: 15px 10px 0px 0px !important;
+}
+div.dataTables_wrapper div.dataTables_filter label span{
+    padding-right: 8px;
+
+
+}
+
+div.dataTables_wrapper div.dataTables_filter label input{
+ width: 200px;
+}
+}

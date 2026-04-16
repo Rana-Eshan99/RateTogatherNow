@@ -1,0 +1,90 @@
+/* CSS for Star rating */
+.star-rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.star-rating-label {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.star-rating {
+    display: flex;
+    direction: rtl;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 28px;
+    padding: 0 0.1rem;
+    margin-bottom: 0px;
+    color: lightgray;
+    /* Default color for all stars */
+}
+
+/* Enabled State */
+.star-rating.enabled label {
+    cursor: pointer;
+}
+
+.star-rating.enabled input:checked~label {
+    color: #F9C154;
+    /* Gold color for checked stars */
+}
+
+.star-rating.enabled label:hover,
+.star-rating.enabled label:hover~label {
+    color: #F9C154;
+    /* Hover color for stars */
+}
+
+/* Disabled State */
+.star-rating.disabled label {
+    cursor: not-allowed;
+    color: lightgray;
+    /* Default color for all stars */
+}
+
+.star-rating.disabled input:checked~label {
+    color: #F9C154;
+    /* Gold color for checked stars */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .star-rating label {
+        font-size: 1.5rem;
+    }
+
+    .star-rating-label {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .star-rating label {
+        font-size: 1.2rem;
+    }
+
+    .star-rating-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* CSS to Set the Star label size for Nest Hub screens */
+@media (max-width: 1280px) and (min-width: 800px) {
+
+    /* For screens Nest Hub Max */
+    .star-rating label {
+        font-size: 22px;
+    }
+}

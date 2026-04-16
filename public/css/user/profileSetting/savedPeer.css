@@ -1,0 +1,58 @@
+/* CSS for Saved Peer -> Peer Name(First & Last Name) in the List Card */
+.peerFirstLastName {
+    font-size: 16px;
+    font-weight: 500;
+    color: #161617;
+    margin-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .peerFirstLastName {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+
+/* CSS for Saved Peer-> Peer Designation Name at Organization Name in the List Card */
+.peerDesignation_OrgName {
+    font-size: 16px;
+    font-weight: 400;
+    color: #58585D;
+}
+@media (min-width: 768px) {
+    .peerDesignation_OrgName {
+        display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limit text to 1 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+/* CSS for Peer Count */
+#savedPeerCount {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #161617;
+}
+
+/* CSS for Initials Div in the Saveds Peer */
+.savedPeerInitialsDivs {
+    width: 64px; /* Adjust size as needed */
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 0px #00000040;
+}
+
+.savedPeerInitialsDivs span {
+    font-size: 18px;
+    font-weight: 800 !important;
+    color: #FFFFFF
+}

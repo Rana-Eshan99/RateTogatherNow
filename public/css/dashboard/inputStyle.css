@@ -1,0 +1,40 @@
+.btn.focus, .btn:focus {
+    box-shadow: none !important;
+}
+
+.inputBorder-valid {
+    border-color: #445260 !important;
+}
+.inputBorder-focus {
+    border-color: #445260 !important;
+}
+.select2.select2-container.select2-container--default{
+    border-color: #445260 !important;
+}
+
+.select2.select2-container.select2-container--default .select2-selection.select2-selection--single,
+.select2.select2-container.select2-container--default .select2-selection.select2-selection--multiple,
+.select2.select2-container.select2-container--below .select2-selection.select2-selection--single,
+.select2.select2-container.select2-container--below .select2-selection.select2-selection--multiple,
+.select2.select2-container.select2-container--above .select2-selection.select2-selection--single,
+.select2.select2-container.select2-container--above  .select2-selection.select2-selection--multiple,
+.select2.select2-container.select2-container--focus .select2-selection.select2-selection--single,
+.select2.select2-container.select2-container--focus .select2-selection.select2-selection--multiple {
+    border-color: #445260 !important;
+}
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--single,
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--multiple {
+    border-color: #445260 !important;
+}
+
+.input-error-label{
+    position: absolute;
+    margin-top: 0px !important;
+    font-size: 11px !important;
+}
+
+.input-error-label-appUser{
+    margin-top: 0px !important;
+    font-size: 13px !important;
+}

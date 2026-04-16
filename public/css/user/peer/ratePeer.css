@@ -1,0 +1,141 @@
+/* CSS for Over All Label Score */
+.lblOverAllScore {
+    font-size: 18px;
+    font-weight: 500 !important;
+    margin-right: 14px;
+    color: #000000;
+}
+
+/* CSS for Over All Rating (Value) Score */
+.lblRatingOverAll {
+    font-size: 32px;
+    font-weight: 500 !important;
+    margin-right: 8px;
+    color: #000000;
+}
+
+/* CSS for Peer name in the Child Card */
+.lblPeerName_Child {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #161617
+}
+
+/* CSS for Peer Rating Description Paragraph */
+.peerRatingDesc {
+    font-size: 16px;
+    font-weight: 400 !important;
+    color: #00000080;
+}
+
+/* CSS for Label Heading in the Rating Section*/
+.lblRating {
+    font-size: 16px;
+    font-weight: 500 !important;
+    color: #161617;
+}
+
+/* CSS for Heading in experience section */
+.experienceHeading {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #161617;
+}
+
+/* CSS for ul in the experienceHeading */
+.experienceHeading ul {
+    font-size: 16px;
+    font-weight: 500 !important;
+    color: #00000080;
+}
+
+/* CSS for Saved / Un-Saved Peer Logo */
+.unSavedPeer img,
+.savedPeer img {
+    height: 24px;
+    width: 24px;
+}
+
+/* CSS for Peer Name and Set them to ellipses to one line */
+.peerName {
+    font-size: 28px;
+    font-weight: 600 !important;
+    color: #161617;
+}
+
+/* CSS for Peer Address and Set them to ellipses to one line */
+.peerAddress {
+    font-size: 14px;
+    font-weight: 400 !important;
+    color: #58585D;
+}
+
+/* CSS for Initials Outside Div */
+.initialsOutsideDiv {
+    height: 64px;
+    width: 64px;
+}
+
+/* CSS for initial inside Div */
+.initialsInsideDiv {
+    height: 64px;
+    width: 64px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 0px #00000040;
+}
+
+/* CSS for initials div inside text(which is initials) */
+.initialsDivInsideText {
+    font-size: 18px;
+    font-weight: 600 !important;
+    color: #FFFFFF;
+}
+
+/* CSS for overAllWorkAgain label */
+.overAllWorkAgain {
+    font-size: 18px;
+    font-weight: 500 !important;
+    color: #000000;
+    margin-right: 14px;
+    margin-bottom: 0px;
+}
+
+/* CSS for overAllWorkAgain Value */
+.overAllWorkAgainValue {
+    border-radius: 4px;
+    height: 27px;
+    width: 27px;
+    margin-right: 10px;
+}
+
+/* CSS for Rate Organization Button */
+#btnRatePeer {
+    font-size: 14px;
+    font-weight: 600 !important;
+    color: #FFFFFF;
+}
+
+/* CSS to change background color on hover effect on the Close button in submission modal */
+#btnClose:hover {
+    background: #6941C6;
+}
+
+
+/* CSS to Set the Responsiveness of the screen */
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+    .col-lg-4,
+    .col-md-12,
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .star-rating {
+        justify-content: flex-start;
+        /* Align stars to the left */
+    }
+}

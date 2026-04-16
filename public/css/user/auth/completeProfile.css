@@ -1,0 +1,155 @@
+.container-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.form-section {
+    padding: 20px;
+}
+
+/* CSS to change the hover color */
+#btnCompleteProfile:hover {
+    background: #6941C6;
+}
+
+/* The is-invalid-without-icon class is a custom class that overrides the default Bootstrap .is-invalid behavior by removing the background icon. */
+.is-invalid-border-only {
+    border-color: #dc3545 !important;
+    /* Red border color */
+    background-image: none;
+    /* Remove the error icon */
+    padding-right: 0.75rem;
+    /* Adjust padding if necessary */
+}
+
+
+/* CSS for 768 size screens */
+@media (min-width: 768px) and (max-width: 768px) {
+    .firstDiv {
+        height: auto !important;
+    }
+
+    .profilePictureRow {
+        display: block;
+    }
+
+    .profilePictureRightCol {
+        display: contents;
+    }
+
+    #mainImg {
+        height: 1024px;
+    }
+}
+
+
+
+/* CSS for 1024 screens */
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .firstDiv {
+        height: auto !important;
+
+    }
+
+    #mainImg {
+        height: 1366px;
+    }
+}
+
+
+
+/* CSS for 1440 screens */
+@media (min-width: 1440px) and (max-width: 1440px) {
+    .firstDiv {
+        height: auto !important;
+    }
+}
+
+/* CSS to set the Profile Picture Row to Show them into 2 row */
+@media (min-width: 820px) and (max-width: 820px) {
+    .profilePictureRow {
+        display: block;
+    }
+
+    .profilePictureRightCol {
+        display: contents;
+    }
+}
+@media (min-width: 412px) {
+    #mainImg {
+        height: 99vh   !important;
+    }
+}
+@media (max-width: 767px) {
+    #mainImg {
+        height: 72vh   !important;
+    }
+    .MyfirstDiv {
+        min-height: 76vh   !important;
+    }
+}
+@media (min-width: 854px) {
+    #mainImg {
+        height: 98vh   !important;
+    }
+}
+@media (min-width: 913px) {
+    #mainImg {
+        height: 97vh   !important;
+    }
+}
+@media (width: 1024px) and (height: 1366px) {
+    #mainImg {
+        height: 98vh   !important;
+    }
+}
+
+@media (width: 1024px) and (height: 600px) {
+    #mainImg {
+        height: 140vh   !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    #mainImg {
+        height: 116vh   !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    #mainImg {
+        height: 118vh   !important;
+        width: 90%;
+    }
+    .MyfirstDiv {
+        height: 122vh   !important;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .firstDiv {
+        display: none !important;
+        height: 100% !important;
+    }
+    .custmMargin{
+        margin-top: 20px;
+    }
+}
+.form-section {
+    background-color: white !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh !important; /* Makes sure the section is at least 100% of the viewport height */
+    padding: 0px 0px 20px 20px !important; /* Optional: Add some padding to the content */
+}
+.ui-autocomplete {
+    max-height: 150px; /* Limit the height of the suggestions */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding-right: 10px; /* Add space for scrollbar */
+}

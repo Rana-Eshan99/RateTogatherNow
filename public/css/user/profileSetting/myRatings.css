@@ -1,0 +1,136 @@
+/* Style for the active tab */
+.nav-link.myRatings.active {
+    background-color: #EAF5FF;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1D2939;
+}
+
+/* Remove default bottom border on tabs */
+.nav-link.myRatings {
+    border-bottom: none;
+    background-color: #FFFFFF;
+}
+
+/* Hover state for non-active tabs */
+.nav-link.myRatings:hover {
+    color: #0678E9;
+}
+
+/* CSS for Inside Tabs of My Rating to Display My Peers or Organization Rating */
+#myRatingPeersOrganizationDiv {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1D2939;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    height: auto;
+    width: fit-content;
+}
+
+
+
+
+/* CSS for My Ratings-> Organizations */
+#myRatingOrganizationsTab {
+    height: 40px;
+    padding: 10px 16px;
+    gap: 8px;
+    border-radius: 0px 8px 8px 0px;
+    border-right: 1px solid #D0D5DD;
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text from wrapping */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+#myRatingPeersTab {
+    height: 40px;
+    padding: 10px 16px;
+    gap: 8px;
+    border-radius: 8px 0px 0px 8px;
+    border-right: 1px solid #D0D5DD;
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text from wrapping */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+@media (max-width: 768px) {
+    #myRatingOrganizationsTab,
+    #myRatingPeersTab {
+        width: auto; /* Allow auto width */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+}
+
+/* CSS for My Ratings->Organization to Set Rating Star Size */
+.myRatingStars {
+    font-size: 20px !important;
+}
+
+/* CSS for My Ratings->Organization to Set Label Size in Rating Span*/
+.myRatingOrganizationLabel {
+    font-size: 14px;
+    font-weight: 500;
+    color: #161617;
+}
+
+/* CSS for Edit button at My Rating-Organization and Peer */
+.editRating {
+    background-color: #0678E9 !important;
+    width: 100px;
+    height: 50px;
+    padding: 12px 32px 12px 32px;
+    gap: 10px;
+    border-radius: 8px;
+    font-size:16px;
+    font-weight:500 !important;
+}
+
+/* CSS for Nest Hub Screens */
+@media (min-width: 1024px) and (max-width: 600px) {
+    .orgResponsive {
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+/* CSS for Dimension Responsive 1024 x 459 */
+@media (min-width: 1024px) and (max-width: 459px) {
+    .orgResponsive {
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+/* CSS for IPad Pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .orgResponsive {
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+
+.star-rating-org {
+    display: flex;
+    justify-content: flex-end;  /* Align stars to the left */
+    direction: ltr;  /* Ensure stars fill from left to right */
+    gap: 2px;  /* Optional: Add space between stars */
+}
+
+.user-star-rating-org {
+    font-size: 24px;
+    color: #d3d3d3;  /* Unfilled stars color */
+}
+
+.user-star-rating-org.filled {
+    color: #F9C154;  /* Filled stars color */
+}
+@media (max-width: 575.98px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+}

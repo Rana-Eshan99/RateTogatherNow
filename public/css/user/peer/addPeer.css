@@ -1,0 +1,66 @@
+/* CSS for Card heading */
+.cardHeading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #161617;
+}
+
+/* CSS for Card heading text / paragraph */
+.cardHeadingText {
+    font-size: 16px;
+    font-weight: 400;
+    color: #00000080;
+}
+
+
+/* CSS for label heading */
+.labelHeading {
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: #344054;
+}
+
+/* CSS for Text in Add Button */
+#btnAddPeer span {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 600
+}
+
+/* CSS to change background color on hover effect on the btnAddPeer button */
+
+
+@media (min-width: 480px) {
+    #btnAddPeer:hover {
+        background: #6941C6;
+    }
+}
+
+/* CSS for Cancel Button */
+#btnCancel {
+    background-color: white;
+    border: 1px solid #1098F799;
+
+}
+
+/* CSS for Text in Cancel Button */
+#btnCancel span {
+    font-size: 16px;
+    color: #1098F7;
+    font-weight: 600;
+}
+
+/* CSS to change background color on hover effect on the Close button in submission modal */
+#btnClose:hover {
+    background: #6941C6;
+}
+
+/* The is-invalid-without-icon class is a custom class that overrides the default Bootstrap .is-invalid behavior by removing the background icon. */
+.is-invalid-border-only {
+    border-color: #dc3545 !important;
+    /* Red border color */
+    background-image: none;
+    /* Remove the error icon */
+    padding-right: 0.75rem;
+    /* Adjust padding if necessary */
+}
