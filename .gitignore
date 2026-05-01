@@ -18,7 +18,6 @@ node_modules
 /vendor
 
 # Sensitive files - SECRET
-# *.json
 *.p8
 AuthKey_*.p8
 tsbaseproject-*.json
