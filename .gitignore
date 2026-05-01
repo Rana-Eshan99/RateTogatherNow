@@ -22,4 +22,4 @@ node_modules
 # *.json
 *.p8
 AuthKey_*.p8
-# tsbaseproject-*.json
+tsbaseproject-*.json
