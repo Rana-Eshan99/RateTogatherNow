@@ -13,13 +13,11 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 /.idea
-composer.lock
 package-lock.json
 node_modules
-/vendor
 
-# Sensitive files - SECRET
-*.json
+# Sensitive files only
 *.p8
 AuthKey_*.p8
 tsbaseproject-*.json
+*-firebase.json
