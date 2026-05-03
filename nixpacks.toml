@@ -16,12 +16,14 @@ nixPkgs = [
   "php82Extensions.tokenizer",
   "php82Extensions.ctype",
   "php82Extensions.fileinfo",
+  "php82Extensions.gd",
+  "php82Extensions.grpc",
   "composer"
 ]
 
 [phases.build]
 cmds = [
-  "composer install --no-dev --optimize-autoloader --ignore-platform-reqs"
+  "composer install --optimize-autoloader --no-scripts --no-interaction --ignore-platform-reqs"
 ]
 
 [start]
