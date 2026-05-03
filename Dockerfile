@@ -1,7 +1,7 @@
 FROM php:8.2-cli
 
 # System dependencies
-    RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y \
     git curl zip unzip libzip-dev \
     libpng-dev libjpeg-dev libfreetype6-dev \
     libonig-dev libxml2-dev \
@@ -10,12 +10,6 @@ FROM php:8.2-cli
     && docker-php-ext-install pdo pdo_mysql mbstring xml ctype \
    fileinfo bcmath curl zip gd \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
-
-
-
-
-
-
 
 # Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -47,7 +41,5 @@ RUN mkdir -p storage/framework/{sessions,views,cache,testing} \
 
 EXPOSE 8000
 
-CMD php artisan config:cache && \
-    php artisan route:cache && \
-    php artisan view:cache && \
-    php artisan serve --host=0.0.0.0 --port=$PORT
+# FIX: Use 'sh -c' to properly evaluate the Railway $PORT variable
+CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=${PORT:-8000}"]
