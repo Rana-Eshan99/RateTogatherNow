@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     libonig-dev libxml2-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install pdo pdo_mysql mbstring xml ctype \
-       fileinfo bcmath tokenizer curl zip gd \
+   fileinfo bcmath curl zip gd \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Composer
