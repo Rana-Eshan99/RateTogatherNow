@@ -8,26 +8,23 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install pdo pdo_mysql mbstring xml ctype \
        fileinfo bcmath tokenizer curl zip gd \
-    && pecl install grpc \
-    && docker-php-ext-enable grpc \
-    && apt-get clean
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
-# Copy composer files first (for caching)
 COPY composer.json composer.lock ./
 
-# Install PHP dependencies
+# grpc aur gd ko ignore karo — production mein zarurat nahi
 RUN COMPOSER_ALLOW_SUPERUSER=1 composer install \
     --optimize-autoloader \
     --no-scripts \
     --no-interaction \
-    --ignore-platform-reqs
+    --ignore-platform-req=ext-grpc \
+    --ignore-platform-req=ext-gd
 
-# Copy rest of project
 COPY . .
 
 # Node + npm build
